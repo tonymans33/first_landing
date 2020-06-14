@@ -1,0 +1,262 @@
+
+@font-face
+{
+    font-family: popLight;
+    src: url("Poppins/Poppins-Light.ttf");
+}
+@font-face
+{
+    font-family: popReg;
+    src: url("Poppins/Poppins-Regular.ttf");
+}
+*,*::before,*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+    width: 100%;
+    height: 100%;
+    font-family: popLight;
+    overflow: hidden;
+}
+#logo
+{
+    position: absolute;
+    margin-left: 90px;
+    transform: translate(-50%,-50%);
+    animation: fill 0.5s ease forwards 1.8s;
+}
+#logo path:nth-child(1)
+{
+    stroke-dasharray: 793px;
+    stroke-dashoffset: 793px;
+    animation: line-anim 1s ease forwards;
+}
+#logo path:nth-child(2)
+{
+    stroke-dasharray: 715px;
+    stroke-dashoffset: 715px;
+    animation: line-anim 1s ease forwards 0.3s;
+}
+#logo path:nth-child(3)
+{
+    stroke-dasharray: 581px;
+    stroke-dashoffset: 581px;
+    animation: line-anim 1s ease forwards 0.6s;
+}
+#logo path:nth-child(4)
+{
+    stroke-dasharray: 627px;
+    stroke-dashoffset: 627px;
+    animation: line-anim 1s ease forwards 0.9s;
+}
+#logo path:nth-child(5)
+{
+    stroke-dasharray: 962px;
+    stroke-dashoffset: 962px;
+    animation: line-anim 1s ease forwards 1.2s;
+}
+#logo path:nth-child(6)
+{
+    stroke-dasharray: 586px;
+    stroke-dashoffset: 586px;
+    animation: line-anim 1s ease forwards 1.5s;
+}
+#logo path:nth-child(7)
+{
+    stroke-dasharray: 715px;
+    stroke-dashoffset: 715px;
+    animation: line-anim 1s ease forwards 1.8s ;
+}
+
+
+@keyframes line-anim {
+    to
+    {
+        stroke-dashoffset: 0%;
+    }
+}
+
+@keyframes fill {
+    from
+    {
+        fill : transparent;
+    }
+    to
+    {
+        fill: black;
+    }
+}
+nav
+{
+    width: 90%;
+    min-height: 8vh;
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav h3
+{
+    font-family: popLight;
+    font-style: normal;
+}
+nav a
+{
+    text-decoration: none;
+}
+
+.contact-border h3
+{
+    border: 1px solid #732DBC;
+    background: linear-gradient(270deg, #732DBC -2.39%, #7C4AFF 102.25%);
+    border-radius: 40px;
+    padding: 7px 20px;
+    color: white;
+    font-size: 12px;
+}
+.hero
+{
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    opacity: 90%;
+    align-self: center ;
+    justify-self: center;
+    overflow: hidden;
+}
+.nav
+{
+    background: #FAF7F7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.content .details
+{
+    margin-left: 800px;
+    margin-top: 200px;
+}
+.content .details h1
+{
+    font-size: 50px;
+}
+.content .details h4
+{
+    font-family: popLight;
+    color: #3A3939;
+    padding: 10px 0px 40px;
+    font-size: 25px;
+}
+.details a
+{
+    text-decoration: none;
+    color: black;
+    font-family: popLight;
+
+}
+.get-started
+{
+    font-family: popLight;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid #7C4AFF;
+    background: white;
+    color: black;
+}
+
+.sign-box
+{
+    position: absolute;
+    margin-left: 1090px;
+    margin-top: 80px;
+    width: 350px;
+    height: 550px;
+    border-radius: 15px;
+    background: linear-gradient(89.77deg, #000000 0.33%, #5523B1 92.45%, #682BD9 99.68%, #672ADA 99.69%, rgba(95, 41, 238, 0) 99.7%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+
+}
+.profile-pic
+{
+    width: 100px;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top : 3%;
+    left: 38%;
+}
+
+.content .details .hero2 img
+{
+    margin-left: 350px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    opacity: 80%;
+}
+
+.sign-content .sign-box h1
+{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+.sign-content .sign-box .sign-frame
+{
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 250px;
+    height: 400px;
+    padding: 60px 0px;
+
+}
+.sign-content .sign-box .sign-frame .inputs
+{
+    background : linear-gradient(89.77deg, #732DBC 0.33%, #682BD9 65.02%, #672ADA 99.69%, rgba(95, 41, 238, 0) 99.7%);
+    border: 1px solid white  ;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 35px;
+    width: 180px;
+    height: 30px;
+}
+.sign-content .sign-box .sign-frame .sign-btn
+{
+    font-family: popLight;
+    border-radius: 10px;
+    padding: 7px 18px;
+    border: 1px solid white;
+    color: white;
+    margin-left:500px;
+    background: linear-gradient(89.77deg, #732DBC 0.33%, #682BD9 65.02%, #672ADA 99.69%, rgba(95, 41, 238, 0) 99.7%);
+}
+
+.sign-content .hero2 img
+{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin-top: 200px;
+    opacity: 80%;
+}
+.sign-content .sign-details
+{
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 300px;
+}
+
+.content .ball #ball
+{
+    margin-left: 900px;
+    position: absolute;
+    width: 700px;
+    height: 410px;
+    opacity: 80%;
+}
